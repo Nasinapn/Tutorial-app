@@ -16,14 +16,22 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
+import { AppNavigation } from './src/screens/AppNavigation';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
+  const backgroundStyle = {
+    backgroundColor: isDarkMode ? "#222" : "#F3F3F3",
+  };
 
   return (
-    <View>
-      <Text>Tutorial App</Text>
-    </View>
+    <>
+      <StatusBar
+        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
+        backgroundColor={backgroundStyle.backgroundColor}
+      />
+      <AppNavigation />
+    </>
   );
 }
 
