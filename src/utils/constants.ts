@@ -15,6 +15,11 @@ export const TUTORIALSS_LIST: {
     {id: 'whatsapp_tutorial_1', name: 'Whatsapp Tutorial 1', video: whatsapp_1},
     {id: 'whatsapp_tutorial_2', name: 'Whatsapp Tutorial 2', video: whatsapp_1},
     {id: 'whatsapp_tutorial_3', name: 'Whatsapp Tutorial 3', video: whatsapp_1},
+    {
+      id: 'whatsapp_tutorial_4',
+      name: 'Whatsapp Tutorial 4',
+      video: whatsapp_1,
+    },
   ],
   instagram: [
     {
