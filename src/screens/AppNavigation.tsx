@@ -8,15 +8,20 @@ import {NavigationContainer} from '@react-navigation/native';
 import {AppsList} from './apps-list/AppsList';
 import {Tutorial} from './tutorial/Tutorial';
 import {TutorialsList} from './tutorials-list/TutorialsList';
+import {Title} from './title/Title';
 
 type AppNavigationParamsList = {
+  Title: undefined;
   AppsList: undefined;
   TutorialsList: {app: string};
   Tutorial: {data: {id: string; name: string; video: any}};
 };
 
 const StackNavigator = createNativeStackNavigator<AppNavigationParamsList>();
-
+export type TitleScreenNavigationProp = NativeStackScreenProps<
+  AppNavigationParamsList,
+  'Title'
+>;
 export type AppsListScreenNavigationProp = NativeStackScreenProps<
   AppNavigationParamsList,
   'AppsList'
@@ -34,12 +39,17 @@ export const AppNavigation = () => {
   return (
     <NavigationContainer>
       <StackNavigator.Navigator
-        initialRouteName={'AppsList'}
+        initialRouteName={'Title'}
         screenOptions={
           {
             //   headerShown: false,
           }
         }>
+        <StackNavigator.Screen
+          name={'Title'}
+          component={Title}
+          options={{headerShown: false}}
+        />
         <StackNavigator.Screen
           name={'AppsList'}
           component={AppsList}
