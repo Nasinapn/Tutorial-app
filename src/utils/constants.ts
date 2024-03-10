@@ -16,6 +16,10 @@ import whatsapp_4 from '../videos/whatsapp/whatsapp_4.mp4';
 import whatsapp_5 from '../videos/whatsapp/whatsapp_5.mp4';
 import whatsapp_6 from '../videos/whatsapp/whatsapp_6.mp4';
 import whatsapp_7 from '../videos/whatsapp/whatsapp_7.mp4';
+import whatsapp_8 from '../videos/whatsapp/whatsapp_8.mp4';
+import whatsapp_9 from '../videos/whatsapp/whatsapp_9.mp4';
+import whatsapp_10 from '../videos/whatsapp/whatsapp_10.mp4';
+import whatsapp_11 from '../videos/whatsapp/whatsapp_11.mp4';
 
 import mail_1 from '../videos/gmail/mail_1.mp4';
 import mail_2 from '../videos/gmail/mail_2.mp4';
@@ -113,6 +117,19 @@ export const TUTORIALSS_LIST: {
       id: 'how_to_delete_a_message',
       name: 'How to delete a message',
       video: whatsapp_7,
+    },
+    {
+      id: 'how_to_forward_a_message',
+      name: 'How to forward a message',
+      video: whatsapp_8,
+    },
+    {id: 'how_to_video_call_', name: 'How to video call', video: whatsapp_9},
+    {id: 'how_to_put_status', name: 'How to put status', video: whatsapp_10},
+
+    {
+      id: 'how_to_create_a_group',
+      name: 'How to  create a group',
+      video: whatsapp_11,
     },
   ],
   gmail: [
